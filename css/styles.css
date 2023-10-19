@@ -79,7 +79,7 @@ body {
   padding: 100px 0;
 }
 .list-first {
-  color: var(--dark);
+  color: var(--ocean)
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -92,7 +92,7 @@ body {
 }
 .list-first:hover::after {
   display: block;
-  content: " ";
+  content:";
   border: 2px solid var(--ocean);
   border-radius: 2px;
   width: inherit;
@@ -659,5 +659,5 @@ border:none;
 }
 .is-hidden {
   visibility: hidden;
-  
+
 }
