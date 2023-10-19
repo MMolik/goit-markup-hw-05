@@ -79,31 +79,32 @@ body {
   padding: 100px 0;
 }
 .list-first {
-  color: var(--ocean)
+  color: var(--ocean);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0;
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-first:hover {
   color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-first:hover::after {
+  content: " ";
   display: block;
-  content:";
+  position: absolute;
   border: 2px solid var(--ocean);
   border-radius: 2px;
-  width: inherit;
   height: 4px;
+  width: 48px;
   left: 0;
   bottom: -1px;
   background-color: var(--ocean);
+  
 }
 .list-first:focus {
   color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address {
@@ -117,15 +118,13 @@ body {
   color: var(--slate);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); ;
 }
 .contact:hover {
   color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact:focus {
-  color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  color: #404bbf;}
 .list-second {
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -139,11 +138,10 @@ body {
 }
 .list-second:hover {
   color: #ffffff;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .list-second:focus {
   color: #ffffff;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-second:hover {
   background-color: #404bbf;
@@ -212,7 +210,7 @@ body {
 }
 .button-order-service:focus {
   background-color: #404bbf;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .head-three-tag {
   color: var(--dark);
@@ -571,11 +569,9 @@ img {
 }
 .footer-socials-link:hover {
   background-color: var(--green);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-socials-link:focus {
   background-color: var(--green);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socials-list-items {
