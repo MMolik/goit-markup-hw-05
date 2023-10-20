@@ -90,7 +90,7 @@ body {
 .list-first:hover {
   color: #404bbf;
 }
-.list-first:hover::after {
+.list-first::after {
   content: " ";
   display: block;
   position: absolute;
