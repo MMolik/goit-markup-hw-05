@@ -672,3 +672,6 @@ img {
 .vector-close-button:hover {
   fill: #ffffff;
 }
+.vector-close-button:focus {
+  fill: #ffffff;
+}
