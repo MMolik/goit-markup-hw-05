@@ -101,7 +101,6 @@ body {
   left: 0;
   bottom: -1px;
   background-color: var(--ocean);
-  
 }
 .list-first:focus {
   color: #404bbf;
@@ -118,13 +117,14 @@ body {
   color: var(--slate);
   line-height: 1.5;
   letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); ;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact:hover {
   color: #404bbf;
 }
 .contact:focus {
-  color: #404bbf;}
+  color: #404bbf;
+}
 .list-second {
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -138,7 +138,6 @@ body {
 }
 .list-second:hover {
   color: #ffffff;
-
 }
 .list-second:focus {
   color: #ffffff;
@@ -206,11 +205,9 @@ body {
 }
 .button-order-service:hover {
   background-color: #404bbf;
-  
 }
 .button-order-service:focus {
   background-color: #404bbf;
-
 }
 .head-three-tag {
   color: var(--dark);
@@ -511,7 +508,8 @@ img {
 .customers-list-items {
   width: calc((100% - 120px) / 6);
   height: 88px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-list-link {
   width: 100%;
@@ -522,7 +520,8 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--light-slate);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-list-link:hover {
   border: 1px var(--ocean) solid;
@@ -603,12 +602,13 @@ img {
   align-items: center;
   opacity: 1;
   pointer-events: all;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-window.is-hidden {
   opacity: 0;
@@ -618,14 +618,15 @@ img {
   background-color: var(--dairy);
   width: 408px;
   min-height: 584px;
-  top:50%;
+  top: 50%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%) scale(1);
   display: block;
   border-radius: 4px;
   background: #fcfcfc;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-button {
@@ -638,22 +639,30 @@ img {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  background-color: #e7e9fc; 
+  background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button:hover {
-background-color: #404bbf;
-border:none;
+  background-color: #404bbf;
+  border: none;
 }
 .close-button:focus {
   background-color: #404bbf;
-  border:none;
+  border: none;
 }
 .is-hidden {
   visibility: hidden;
-
+}
+.vector-close-button {
+  width: 8px;
+  height: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.vector-close-button:hover {
+fill: #ffffff
 }
