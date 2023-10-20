@@ -91,7 +91,7 @@ body {
   color: #404bbf;
 }
 .list-first::after {
-  content: " ";
+  content:'';
   display: block;
   position: absolute;
   border: 2px solid var(--ocean);
@@ -102,6 +102,12 @@ body {
   bottom: -1px;
   background-color: var(--ocean);
 }
+.list-first:hover {
+
+  border: 2px solid var(--ocean);
+  border-radius: 2px;
+}
+
 .list-first:focus {
   color: #404bbf;
 }
