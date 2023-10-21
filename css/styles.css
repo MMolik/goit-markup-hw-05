@@ -98,19 +98,6 @@ body {
 .list-first:hover {
   color: #404bbf;
 }
-.list-first::after {
-  content: "";
-  display: block;
-  position: absolute;
-  border: 2px solid var(--ocean);
-  border-radius: 2px;
-  height: 4px;
-  width: 48px;
-  left: 0;
-  bottom: -1px;
-  background-color: var(--ocean);
-  
-}
 
 .list-first:focus {
   color: #404bbf;
@@ -465,7 +452,6 @@ img {
 .paragraph-team-members {
   text-align: center;
   margin-top: 8px;
-  margin-bottom: 8px;
 }
 .customers-list {
   display: flex;
@@ -689,3 +675,14 @@ img {
   background-color: #404bbf;
   
 }
+.link-active:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 2px solid var(--ocean);
+  border-radius: 2px;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  bottom: -1px;
+  background-color: var(--ocean);}
