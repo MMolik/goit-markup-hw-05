@@ -688,7 +688,7 @@ img {
   background-color: var(--ocean);}
 
  .link-active {
-  color: var();
+  color: var(--ocean);
   text-decoration: none;
   display: block;
   font-weight: 500;
