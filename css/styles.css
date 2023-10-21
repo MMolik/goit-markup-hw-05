@@ -87,7 +87,7 @@ body {
   padding: 100px 0;
 }
 .list-first {
-  color: var(--ocean);
+ color: var(--dark);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -675,7 +675,7 @@ img {
   background-color: #404bbf;
   
 }
-.link-active:hover::after {
+.link-active::after {
   content: "";
   display: block;
   position: absolute;
@@ -686,3 +686,15 @@ img {
   left: 0;
   bottom: -1px;
   background-color: var(--ocean);}
+
+ .link-active {
+  color: var();
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 24px 0;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
